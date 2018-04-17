@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
     <title>404 - Not Found</title>
@@ -99,12 +100,13 @@
     </style>
     <script type="text/javascript">
         var num = 10;
+
         function redirect() {
             num--;
             document.getElementById("num").innerHTML = num;
             if (num < 0) {
                 document.getElementById("num").innerHTML = 0;
-                location.href = "https://shuoit.net";
+                location.href = "";
             }
         }
         setInterval("redirect()", 1000);
@@ -112,15 +114,20 @@
 </head>
 
 <body onload="redirect();">
-<div class="whole">
-    <img src="/images/404-bg.jpg">
-    <div class="mask"></div>
-</div>
-<div class="b">
-    <h1 class="center">可能输错网址或此页面从未存在过</h1>
-    <p><br><br><br><br>
-        <span id="num"></span>秒后将继续探险...
-    </p>
-</div>
+    <div class="whole">
+        <img src="/images/404-bg.jpg">
+        <div class="mask"></div>
+    </div>
+    <div class="b">
+        <h1 class="center">可能输错网址或此页面从未存在过</h1>
+        <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span id="num"></span>秒后将继续探险...
+        </p>
+    </div>
 </body>
+
 </html>
